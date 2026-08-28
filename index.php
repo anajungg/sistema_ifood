@@ -10,9 +10,9 @@
 <body>
     <h2>Restaurante Ifood</h2>
 
-    <button type="button" onclick="window.location.href='public/clientes/add_cliente.php'">Cadastrar Cliente</button>
-    <button type="button" onclick="window.location.href='public/restaurante/add_restaurante.php'">Cadastrar Restaurante</button>
-    <button type="button" onclick="window.location.href='public/pedidos/add_pedido.php'">Cadastrar Pedido</button>
+    <button type="button" onclick="window.location.href='public/cliente/adicionar_cliente.php'">Cadastrar Cliente</button>
+    <button type="button" onclick="window.location.href='public/restaurante/adicionar_restaurante.php'">Cadastrar Restaurante</button>
+    <button type="button" onclick="window.location.href='public/pedido/adicionar_pedido.php'">Cadastrar Pedido</button>
 
     <br>
     <h2>Lista de Clientes</h2>
