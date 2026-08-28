@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar Novo Usuario</title>
+    <title>Adicionar Novo Cliente</title>
 </head>
 <body>
     <h2>Adicionar Novo Cliente</h2>
