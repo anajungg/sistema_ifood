@@ -4,7 +4,7 @@ include '../../infra/conexao.php';
 
 $id = $_GET['id'];
 $sql = "SELECT * FROM restaurante WHERE id = $id";
-$cliente_editantes = $conn->query($sql);
+$restaurante_editando = $conn->query($sql);
 $cliente = $restaurante_editando->fetch_assoc();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
