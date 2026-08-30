@@ -3,11 +3,11 @@ $id = $_GET['id'];
 include '../../infra/conexao.php';
 
 $sql = "DELETE FROM clientes WHERE id = $id";
-if ($conn->query($sql) === TRUE) {
+if ($conexao->query($sql) === TRUE) {
     echo "Cliente excluído com sucesso!<br>";
     echo "<button type='button' onclick=\"window.location.href='../../index.php'\">Voltar</button>";
 } else {
-    echo "Erro ao excluir cliente: " . $conn->error;
+    echo "Erro ao excluir cliente: " . $conexao->error;
 }
 
 ?>

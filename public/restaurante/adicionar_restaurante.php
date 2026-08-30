@@ -9,10 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $endereco = $_POST['endereco'];
 
     $sql = "INSERT INTO restaurante (nome, categoria, telefone, endereco) VALUES ('?', '?', '?', '?')";
-    if ($conn->query($sql) === TRUE) {
+    if ($conexao->query($sql) === TRUE) {
         echo "Novo restaurante cadastrado com sucesso!";
     } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+        echo "Erro: " . $sql . "<br>" . $conexao->error;
     }
 }
 

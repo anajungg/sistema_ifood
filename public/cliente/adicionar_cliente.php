@@ -9,10 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $endereco = $_POST['endereco'];
 
     $sql = "INSERT INTO clientes (nome, email, telefone, endereco) VALUES ('$nome', '$email', '$telefone', '$endereco')";
-    if ($conn->query($sql) === TRUE) {
+    if ($conexao->query($sql) === TRUE) {
         echo "Novo cliente cadastrado com sucesso!";
     } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+        echo "Erro: " . $sql . "<br>" . $conexao->error;
     }
 }
 

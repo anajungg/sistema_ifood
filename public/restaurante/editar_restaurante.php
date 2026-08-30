@@ -4,7 +4,7 @@ include '../../infra/conexao.php';
 
 $id = $_GET['id'];
 $sql = "SELECT * FROM restaurante WHERE id = $id";
-$restaurante_editando = $conn->query($sql);
+$restaurante_editando = $conexao->query($sql);
 $cliente = $restaurante_editando->fetch_assoc();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -14,10 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $endereco = $_POST['endereco'];
 
     $sql = "UPDATE restaurante SET nome='?', categoria='?', telefone='?', endereco='?' WHERE id=$id";
-    if ($conn->query($sql) === TRUE) {
+    if ($conexao->query($sql) === TRUE) {
         echo " Restaurante atualizado com sucesso!";
     } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+        echo "Erro: " . $sql . "<br>" . $conexao->error;
     }
 }
 
