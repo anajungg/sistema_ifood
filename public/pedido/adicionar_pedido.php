@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar Novo Pet</title>
+    <title>Adicionar Novo Pedido</title>
 </head>
 
 <body>
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <select name="cliente_id" required>
             <option value="">Selecione o Cliente</option>
-            <!-- <option value="1">Arthur</option> -->
+    
             <?php
                 $sql = "SELECT id, nome FROM clientes";
                 $clientes = $conn->query($sql);
